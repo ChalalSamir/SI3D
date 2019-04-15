@@ -1,0 +1,1 @@
+{"version":3,"sources":["scss/style.scss"],"names":[],"mappings":"AAAA;EACI;;AAEA;EACI","file":"style.a6dae8f7.css","sourceRoot":"../src","sourcesContent":["header {\n    background: gold;\n\n    h1 {\n        color: aqua;\n    }\n    \n}"]}
