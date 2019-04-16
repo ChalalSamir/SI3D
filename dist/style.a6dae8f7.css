@@ -1,8 +1,82 @@
+body {
+  background-image: url("/bg.a719d718.png");
+  background-size: 1366px;
+  background-repeat: no-repeat;
+  font-family: "Roboto", sans-serif;
+  color: white;
+}
+
 header {
-  background: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+header .header__logo {
+  position: relative;
+  margin-left: 20px;
+}
+header .logo {
+  position: absolute;
+  top: 21px;
+  right: -10px;
+}
+header span {
+  font-weight: 100;
 }
 header h1 {
-  color: aqua;
+  color: white;
+  text-align: center;
+  font-weight: 300;
+}
+header ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-right: 50px;
+}
+header li {
+  color: white;
+  list-style: none;
+  padding: 20px 25px;
+  font-weight: 200;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.container .intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-top: 150px;
+}
+.container .intro .intro__title {
+  color: white;
+  font-weight: 400;
+  font-size: 44px;
+  width: 600px;
+}
+.container .intro .intro__button {
+  background-color: white;
+  width: 250px;
+  border-radius: 7px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 50px;
+}
+.container .intro .intro__button p {
+  color: black;
+  text-align: center;
+  font-size: 24px;
+}
+.container .intro .intro__text {
+  font-weight: 100;
+  width: 250px;
+  text-align: center;
+  font-size: 14px;
 }
 
 /*# sourceMappingURL=/style.a6dae8f7.css.map */
