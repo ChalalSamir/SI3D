@@ -120,12 +120,30 @@ header {
     }
 
     .concept__text {
+        position: absolute;
+        width: 728px;
+        height: 147px;
+        left: 70px;
+        top: 952px;
+
+        background: #FFFFFF;
+        box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.07);
+        z-index: 1000;
+
+        .concept__image {
+            position: absolute;
+            width: 97px;
+            height: 97px;
+            left: 80px;
+            top: 15px;
+        }
+
         .concept__text1 {
             position: absolute;
             width: 462px;
             height: 85px;
-            left: 279px;
-            top: 983px;
+            left: 235px;
+            bottom: 15px;
 
             font-family: Roboto;
             font-style: normal;
@@ -134,16 +152,34 @@ header {
             line-height: 28px;
 
             color: #000000;
+            z-index: 1;
         }
     }   
     
     .concept__text2 {
+        position: absolute;
+        width: 728px;
+        height: 147px;
+        left: 70px;
+        top: 1159px;
+
+        background: #FFFFFF;
+        box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.07);
+
+        .concept__image2 {
+            position: absolute;
+            width: 97px;
+            height: 97px;
+            left: 80px;
+            top: 15px;
+        }
+
         .concept__text2_1 {
             position: absolute;
             width: 462px;
             height: 57px;
-            left: 279px;
-            top: 1204px;
+            left: 235px;
+            top: 15px;
 
             font-family: Roboto;
             font-style: normal;
@@ -187,6 +223,15 @@ header {
             text-align: justify;
 
             color: #000000;
+        }
+
+        .about__image {
+            position: absolute;
+            width: 1300px;
+            height: 285px;
+            left: 70px;
+            top: 1872px;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         }
     }
 }

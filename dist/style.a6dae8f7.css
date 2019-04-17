@@ -91,25 +91,59 @@ header li {
   line-height: normal;
   color: #000000;
 }
+.container .concept__text {
+  position: absolute;
+  width: 728px;
+  height: 147px;
+  left: 70px;
+  top: 952px;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.07);
+  z-index: 1000;
+}
+.container .concept__text .concept__image {
+  position: absolute;
+  width: 97px;
+  height: 97px;
+  left: 80px;
+  top: 15px;
+}
 .container .concept__text .concept__text1 {
   position: absolute;
   width: 462px;
   height: 85px;
-  left: 279px;
-  top: 983px;
+  left: 235px;
+  bottom: 15px;
   font-family: Roboto;
   font-style: normal;
   font-weight: 300;
   font-size: 20px;
   line-height: 28px;
   color: #000000;
+  z-index: 1;
+}
+.container .concept__text2 {
+  position: absolute;
+  width: 728px;
+  height: 147px;
+  left: 70px;
+  top: 1159px;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.07);
+}
+.container .concept__text2 .concept__image2 {
+  position: absolute;
+  width: 97px;
+  height: 97px;
+  left: 80px;
+  top: 15px;
 }
 .container .concept__text2 .concept__text2_1 {
   position: absolute;
   width: 462px;
   height: 57px;
-  left: 279px;
-  top: 1204px;
+  left: 235px;
+  top: 15px;
   font-family: Roboto;
   font-style: normal;
   font-weight: 300;
@@ -143,6 +177,14 @@ header li {
   line-height: 36px;
   text-align: justify;
   color: #000000;
+}
+.container .about .about__image {
+  position: absolute;
+  width: 1300px;
+  height: 285px;
+  left: 70px;
+  top: 1872px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .footer {
