@@ -1,12 +1,12 @@
 body {
-    background-image: url('./asset/bg.png');
-    background-size: 100vw 100vh;
-    background-repeat: no-repeat;
+   
     font-family: 'Roboto', sans-serif;
     color: white;
+    width: 100vw;
+    
 }
 
-header {
+.header {
 
     display: flex;
     flex-direction: row;
@@ -14,13 +14,14 @@ header {
 
     .header__logo {
         position: relative;
-        margin-left: 20px;
+        margin-left: 30px;
+        margin-top: 10px;
 
     }
 
     .logo {
         position: absolute;
-        top: 21px;
+        top: 14px;
         right: -10px;
     }
 
@@ -29,9 +30,11 @@ header {
     }
 
     h1 {
+        font-size: 24px;
         color: white;
         text-align: center;
         font-weight: 300;
+        margin-top: 15px;
         
     }
 
@@ -45,195 +48,10 @@ header {
     li {
         color: white;
         list-style: none;
-        padding: 20px 25px;
+        padding: 40px 30px;
         font-weight: 200;
     }  
-}
+} 
 
-
-.container {
-
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-
-    .intro {
-
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-        margin-top: 150px;
-    
-        .intro__title {
-            color: white;
-            font-weight: 400;
-            font-size: 44px;
-            width: 600px;
-    
-        }
-
-        .intro__button {
-            background-color: white;
-            width: 250px;
-            border-radius: 7px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            height: 50px;
-
-
-            p {
-                color: black;
-                text-align: center;
-                font-size: 24px;
-                
-            }
-        }
-
-        .intro__text {
-            font-weight: 100;
-            width: 250px;
-            text-align: center;
-            font-size: 14px;
-            
-        }
-    
-    
-    }
-
-    .concept {
-        .concept__title {
-            position: absolute;
-            width: 246px;
-            height: 52px;
-            left: 68px;
-            top: 810px;
-
-            font-family: Roboto;
-            font-style: normal;
-            font-weight: bold;
-            font-size: 44px;
-            line-height: normal;
-
-            color: #000000;
-        }
-    }
-
-    .concept__text {
-        position: absolute;
-        width: 728px;
-        height: 147px;
-        left: 70px;
-        top: 952px;
-
-        background: #FFFFFF;
-        box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.07);
-        z-index: 1000;
-
-        .concept__image {
-            position: absolute;
-            width: 97px;
-            height: 97px;
-            left: 80px;
-            top: 15px;
-        }
-
-        .concept__text1 {
-            position: absolute;
-            width: 462px;
-            height: 85px;
-            left: 235px;
-            bottom: 15px;
-
-            font-family: Roboto;
-            font-style: normal;
-            font-weight: 300;
-            font-size: 20px;
-            line-height: 28px;
-
-            color: #000000;
-            z-index: 1;
-        }
-    }   
-    
-    .concept__text2 {
-        position: absolute;
-        width: 728px;
-        height: 147px;
-        left: 70px;
-        top: 1159px;
-
-        background: #FFFFFF;
-        box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.07);
-
-        .concept__image2 {
-            position: absolute;
-            width: 97px;
-            height: 97px;
-            left: 80px;
-            top: 15px;
-        }
-
-        .concept__text2_1 {
-            position: absolute;
-            width: 462px;
-            height: 57px;
-            left: 235px;
-            top: 15px;
-
-            font-family: Roboto;
-            font-style: normal;
-            font-weight: 300;
-            font-size: 20px;
-            line-height: 28px;
-
-            color: #000000;
-        }
-    } 
-
-    .about {
-        .about__title {
-            position: absolute;
-            width: 177px;
-            height: 52px;
-            left: 70px;
-            top: 1560px;
-
-            font-family: Roboto;
-            font-style: normal;
-            font-weight: bold;
-            font-size: 44px;
-            line-height: normal;
-
-            color: #000000;
-        }
-
-        .about__text {
-            position: absolute;
-            width: 1047px;
-            height: 110px;
-            left: 70px;
-            top: 1702px;
-
-            font-family: Roboto;
-            font-style: normal;
-            font-weight: 300;
-            font-size: 23px;
-            line-height: 36px;
-            text-align: justify;
-
-            color: #000000;
-        }
-
-        .about__image {
-            position: absolute;
-            width: 1300px;
-            height: 285px;
-            left: 70px;
-            top: 1872px;
-            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-        }
-    }
-}
 
 

@@ -12,80 +12,112 @@
 
 <body>
 
-        <header class="header">
-                <div class="header__logo">
-                    <h1><span>First</span>Note</h1> 
-                    <img class="logo" src="./scss/asset/note.svg" alt="">
-                </div>
-                <nav>
-                    <ul>
-                        <li>Concept</li>
-                        <li>About</li>
-                        <li>Contact</li>
-                    </ul>
-                </nav> 
-        </header>
-
         <section class="container">
 
-            <section class="intro">
+                <header class="header">
+                    
+                        <div class="header__logo">
+                            <h1><span>First</span>Note</h1> 
+                            <img class="logo" src="./scss/asset/note.svg" alt="">
+                        </div>
 
-                    <p class="intro__title">Unleash your inner musician 
-                        with our custom guitars.
-                    </p>
-        
-                    <div class="intro__button">
-                        <p>Let's Start !</p>
-                    </div>
-        
-                    <p class="intro__text">Customise your guitar</p>
-        
-                </section>
+                        <nav>
+                            <ul>
+                                <li>Concept</li>
+                                <li>About</li>
+                                <li>Contact</li>
+                            </ul>
+                        </nav> 
+                </header>
 
-                <section class="concept">
-                    <h2 class="concept__title">The concept</h2>
-                    <div class="concept__text">
-                        <img class="concept__image" src="scss/asset/headphone.svg" alt="Guitar">
-                        <p class="concept__text1">
-                            FirstNote is creating a guitar based on your answers 
-                            on our little survey, we try to propose something that 
-                            fits your personality and tastes the most.
-                        </p>
-                    </div>
-                    <div class="concept__text2">
-                        <img class="concept__image2" src="scss/asset/electric-guitar.svg" alt="Guitar">
-                        <p class="concept__text2_1">
-                            FirstNote is a brand that helps you finding the guitar that coresponds the most to what you are searching.   
-                        </p>
-                    </div>
-                </section>
+            <section class="container__intro">
 
-                <section class="about">
-                    <h2 class="about__title">About us</h2>
-                    <p class="about__text">
-                        FirstNote was created in 2019 by 4 passionate guitar players. <br>
-                        Our objective is to help people who want to start playing guitar but who never crossed the border. <br>
-                        We are helping you by making the best guitar for you, depending on your personality and style.
-                    </p>
-                    <img class="about__image" src="scss/asset/startup.jpg" alt="Start-up">
-                </section>
+                    <article class="intro">
+
+                            <p class="intro__title">Unleash your inner musician 
+                                with our custom guitars.
+                            </p>
+                
+                            <div class="intro__button">
+                                <p>Let's Start !</p>
+                            </div>
+                
+                            <p class="intro__text">Customise your guitar</p>
+                
+                    </article> 
+
+            </section>
+
+
+
+        </section>
+
+        <section class="concept">
+
+            <div class="concept__container">
+
+                <h3 class="concept__title">The Concept</h3>
+
+                <div class="concept__items">
+                        <img src="./scss/asset/headphone.svg" alt="casque">
+                        <p>First<span>Note</span> is <span>creating</span>  a guitar based on your answers on our little survey, 
+                            we try to propose something that fits your <span>personality</span> and <span>tastes</span> the most.</p>
+                </div>
+        
+        
+                <div class="concept__items">
+                    <img src="./scss/asset/electric-guitar.svg" alt="casque">
+                    <p>First<span>Note</span> is a brand that helps you finding the <span>guitar</span>  that coresponds the most
+                            to what you are searching.   </p>
+                </div>
+
+            </div >
+
+            <div class="concept__guitar">
+
+                <img src="./scss/asset/Guitar.png" alt=""> 
+
+            </div>
+
+            
+        </section>  
+
+        <section class="about">
+
+            <article class="about__left">
+
+                <h3 class="about__title">About Us</h3>
+
+                <p class="about__text">First<span>Note</span> was created in 2019 by 4 <span>passionate</span> guitar players.
+                        Our objective is to <span>help</span> people who want to start playing guitar 
+                        but who never crossed the border.<br>
+                        We are helping you by making the <span>best</span> guitar for you, depending 
+                        on your <span>personality</span> and <span>style</span>.</p>
+            </article>
+
+            <article class="about__img">
+                <img src="./scss/asset/startup.jpg" alt="startup">
+            </article>
 
         </section>
 
         <footer class="footer">
-                <ul class="footer__nav">
-                    <li>payment & security</li>
-                    <li>Sitemap</li>
-                    <li>Find us on</li>
-                    <li>Contact & Service</li>
-                    <li>Privacy policy</li>
-                </ul>
-                <ul class="footer__image">
-                    <img src="" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
-                </ul>
+            
+            <ul class="footer__items">
+                <li>Payement & Security</li>
+                <li>Sitemap</li>
+                <li>Find us on:</li>
+                <li>Contact & Service</li>
+                <li>Privacy Policy</li>
+            </ul>
+
+            <div class="footer__icon">
+                <img src="./scss/asset/facebook.svg" alt="">
+                <img src="./scss/asset/instagram.svg" alt="">
+                <img src="./scss/asset/twitter.svg" alt="">
+            </div>
+
         </footer>
-           
+
 </body>
 </html>

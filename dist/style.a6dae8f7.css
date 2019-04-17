@@ -1,64 +1,125 @@
-body {
-  background-image: url("/bg.a719d718.png");
-  background-size: 100vw 100vh;
-  background-repeat: no-repeat;
-  font-family: "Roboto", sans-serif;
-  color: white;
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 
-header {
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: white;
+  width: 100vw;
+}
+
+.header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-header .header__logo {
+.header .header__logo {
   position: relative;
-  margin-left: 20px;
+  margin-left: 30px;
+  margin-top: 10px;
 }
-header .logo {
+.header .logo {
   position: absolute;
-  top: 21px;
+  top: 14px;
   right: -10px;
 }
-header span {
+.header span {
   font-weight: 100;
 }
-header h1 {
+.header h1 {
+  font-size: 24px;
   color: white;
   text-align: center;
   font-weight: 300;
+  margin-top: 15px;
 }
-header ul {
+.header ul {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
   margin-right: 50px;
 }
-header li {
+.header li {
   color: white;
   list-style: none;
-  padding: 20px 25px;
+  padding: 40px 30px;
   font-weight: 200;
 }
 
 .container {
+  background-image: url("/bg.a719d718.png");
+  background-size: 100%;
+  height: 100vh;
+  width: 100vw;
+}
+.container .container__intro {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
 }
-.container .intro {
+.container .container__intro .intro {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
-  margin-top: 150px;
+  margin-top: 250px;
+  margin-right: 80px;
 }
-.container .intro .intro__title {
+.container .container__intro .intro .intro__title {
   color: white;
   font-weight: 400;
   font-size: 44px;
   width: 600px;
 }
-.container .intro .intro__button {
+.container .container__intro .intro .intro__button {
   background-color: white;
   width: 250px;
   border-radius: 7px;
@@ -66,149 +127,139 @@ header li {
   flex-direction: column;
   justify-content: center;
   height: 50px;
+  margin-top: 80px;
 }
-.container .intro .intro__button p {
+.container .container__intro .intro .intro__button p {
   color: black;
   text-align: center;
   font-size: 24px;
 }
-.container .intro .intro__text {
+.container .container__intro .intro .intro__text {
   font-weight: 100;
   width: 250px;
   text-align: center;
   font-size: 14px;
+  margin-top: 10px;
 }
-.container .concept .concept__title {
-  position: absolute;
-  width: 246px;
-  height: 52px;
-  left: 68px;
-  top: 810px;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 44px;
-  line-height: normal;
-  color: #000000;
+
+.concept {
+  color: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
-.container .concept__text {
-  position: absolute;
-  width: 728px;
-  height: 147px;
-  left: 70px;
-  top: 952px;
-  background: #FFFFFF;
-  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.07);
-  z-index: 1000;
+.concept .concept__container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 100px;
 }
-.container .concept__text .concept__image {
-  position: absolute;
-  width: 97px;
-  height: 97px;
-  left: 80px;
-  top: 15px;
+.concept .concept__container .concept__title {
+  margin-left: 100px;
+  margin-top: 50px;
+  font-size: 40px;
+  font-weight: 700;
 }
-.container .concept__text .concept__text1 {
-  position: absolute;
-  width: 462px;
-  height: 85px;
-  left: 235px;
-  bottom: 15px;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: 300;
-  font-size: 20px;
-  line-height: 28px;
-  color: #000000;
-  z-index: 1;
-}
-.container .concept__text2 {
-  position: absolute;
-  width: 728px;
-  height: 147px;
-  left: 70px;
-  top: 1159px;
-  background: #FFFFFF;
+.concept .concept__container .concept__items {
+  display: flex;
+  flex-direction: row;
+  margin-left: 100px;
+  border: radius 1px grey;
+  width: 560px;
+  height: 130px;
+  margin-top: 100px;
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.07);
 }
-.container .concept__text2 .concept__image2 {
-  position: absolute;
-  width: 97px;
-  height: 97px;
-  left: 80px;
-  top: 15px;
+.concept .concept__container .concept__items img {
+  height: 100px;
+  width: 100px;
+  margin-top: 18px;
+  margin-left: 30px;
 }
-.container .concept__text2 .concept__text2_1 {
-  position: absolute;
-  width: 462px;
-  height: 57px;
-  left: 235px;
-  top: 15px;
-  font-family: Roboto;
-  font-style: normal;
+.concept .concept__container .concept__items p {
+  width: 350px;
+  margin-top: 20px;
+  margin-left: 30px;
   font-weight: 300;
+  line-height: 140%;
+}
+.concept .concept__container .concept__items p span {
+  font-weight: 400;
+}
+.concept .concept__guitar {
+  position: relative;
+  width: 700px;
+}
+.concept .concept__guitar img {
+  position: absolute;
+  top: -10%;
+  right: 35%;
+  height: 600px;
+  width: 220px;
+}
+
+.about {
+  color: black;
+  margin-top: 150px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.about .about__left {
+  margin-left: 250px;
+  margin-top: 50px;
+}
+.about .about__left .about__title {
+  margin-top: 50px;
+  font-size: 40px;
+  font-weight: 700;
+}
+.about .about__left .about__text {
+  width: 550px;
+  margin-top: 40px;
+  font-weight: 300;
+  line-height: 140%;
   font-size: 20px;
-  line-height: 28px;
-  color: #000000;
-}
-.container .about .about__title {
-  position: absolute;
-  width: 177px;
-  height: 52px;
-  left: 70px;
-  top: 1560px;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 44px;
-  line-height: normal;
-  color: #000000;
-}
-.container .about .about__text {
-  position: absolute;
-  width: 1047px;
-  height: 110px;
-  left: 70px;
-  top: 1702px;
-  font-family: Roboto;
-  font-style: normal;
+  line-height: 145%;
   font-weight: 300;
-  font-size: 23px;
-  line-height: 36px;
-  text-align: justify;
-  color: #000000;
 }
-.container .about .about__image {
-  position: absolute;
-  width: 1300px;
-  height: 285px;
-  left: 70px;
-  top: 1872px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+.about .about__left .about__text span {
+  font-weight: 400;
+}
+.about .about__img {
+  margin-right: 180px;
+}
+.about .about__img img {
+  width: 388px;
+  height: 526px;
 }
 
 .footer {
-  position: absolute;
-  width: 1366px;
-  height: 123px;
-  left: 0px;
-  top: 2127px;
+  background-color: #0e0c0c;
+  margin-top: 30px;
+  height: 120px;
+}
+.footer .footer__items {
+  padding-top: 30px;
   display: flex;
   flex-direction: row;
+  justify-content: space-evenly;
 }
-.footer .footer__nav {
-  display: flex;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: 300;
-  font-size: 15px;
-  line-height: 21px;
-  color: #000000;
+.footer .footer__items li {
+  font-weight: 200;
 }
-.footer .footer__nav li {
+.footer .footer__items li:nth-child(3) {
+  margin-left: 60px;
+  margin-right: 60px;
+}
+.footer .footer__icon {
+  justify-content: center;
   display: flex;
-  justify-content: space-around;
-  margin-left: 35px;
+  flex-direction: row;
+  margin-top: 25px;
+}
+.footer .footer__icon img {
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 /*# sourceMappingURL=/style.a6dae8f7.css.map */
