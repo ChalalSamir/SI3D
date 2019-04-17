@@ -1,6 +1,6 @@
 body {
   background-image: url("/bg.a719d718.png");
-  background-size: 1366px;
+  background-size: 100vw 100vh;
   background-repeat: no-repeat;
   font-family: "Roboto", sans-serif;
   color: white;
