@@ -1,0 +1,27 @@
+.footer {
+    position: absolute;
+    width: 1366px;
+    height: 123px;
+    left: 0px;
+    top: 2127px;
+    display: flex;
+    flex-direction: row;
+
+    .footer__nav {
+
+        display: flex;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 15px;
+        line-height: 21px;
+
+        color: #000000;
+
+        li {
+            display: flex;
+            justify-content: space-around; 
+            margin-left: 35px;
+        }
+    }
+}
