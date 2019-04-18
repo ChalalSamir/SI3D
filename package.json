@@ -4,7 +4,7 @@
   "description": "Dans le cadre d'un projet scolaire, nous avons eu pour mission de réaliser un site web en y intégrant des élément 3D.",
   "main": "index.js",
   "scripts": {
-    "dev": "parcel src/index.html"
+    "dev": "parcel src/paiement.html"
   },
   "repository": {
     "type": "git",
