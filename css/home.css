@@ -1,0 +1,138 @@
+.container {
+    background-image: url('../images/bg.png');
+    background-size: 100%;
+    height: 100vh;
+    width: 100vw;
+  }
+  .container .container__intro {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+  .container .container__intro .intro {
+    display: flex;
+    flex-direction: column;
+    margin-top: 350px;
+    margin-right: 80px;
+  }
+  .container .container__intro .intro .intro__title {
+    color: white;
+    font-weight: 500;
+    font-size: 44px;
+    width: 600px;
+  }
+  .container .container__intro .intro .intro__button {
+    background-color: white;
+    width: 250px;
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 50px;
+    margin-top: 80px;
+  }
+  .container .container__intro .intro .intro__button a {
+    text-decoration: none;
+  }
+  .container .container__intro .intro .intro__button p {
+    color: black;
+    text-align: center;
+    font-size: 24px;
+  }
+  .container .container__intro .intro .intro__text {
+    font-weight: 300;
+    width: 250px;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  .concept {
+    color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .concept .concept__container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
+  }
+  .concept .concept__container .concept__title {
+    margin-left: 100px;
+    margin-top: 50px;
+    font-size: 40px;
+    font-weight: 700;
+  }
+  .concept .concept__container .concept__items {
+    display: flex;
+    flex-direction: row;
+    margin-left: 100px;
+    border: radius 1px grey;
+    width: 560px;
+    height: 130px;
+    margin-top: 100px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.07);
+  }
+  .concept .concept__container .concept__items img {
+    height: 100px;
+    width: 100px;
+    margin-top: 18px;
+    margin-left: 30px;
+  }
+  .concept .concept__container .concept__items p {
+    width: 350px;
+    margin-top: 20px;
+    margin-left: 30px;
+    font-weight: 300;
+    line-height: 140%;
+  }
+  .concept .concept__container .concept__items p span {
+    font-weight: 400;
+  }
+  .concept .concept__guitar {
+    position: relative;
+    width: 700px;
+  }
+  .concept .concept__guitar img {
+    position: absolute;
+    top: -20%;
+    right: 35%;
+    height: 600px;
+    width: 220px;
+  }
+  .about {
+    color: black;
+    margin-top: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .about .about__left {
+    margin-left: 200px;
+    margin-top: 50px;
+  }
+  .about .about__left .about__title {
+    margin-top: 50px;
+    font-size: 40px;
+    font-weight: 700;
+  }
+  .about .about__left .about__text {
+    width: 550px;
+    margin-top: 40px;
+    font-weight: 300;
+    line-height: 140%;
+    font-size: 20px;
+    line-height: 145%;
+    font-weight: 300;
+  }
+  .about .about__left .about__text span {
+    font-weight: 400;
+  }
+  .about .about__img {
+    margin-right: 180px;
+  }
+  .about .about__img img {
+    width: 388px;
+    height: 526px;
+  }
+  

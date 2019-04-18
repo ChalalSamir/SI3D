@@ -1,0 +1,139 @@
+@import 'reset.css';
+@import 'header.css';
+@import 'footer.css';
+.contain {
+  height: 60px;
+}
+.breadcrumb {
+  color: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 20px;
+  font-weight: 300;
+}
+.breadcrumb .breadcrumb__items {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.breadcrumb .breadcrumb__items .border {
+  border: 1px black;
+  width: 91px;
+  height: 1px;
+  background: black;
+  margin-top: 70px;
+}
+.breadcrumb .breadcrumb__items li {
+  padding: 61px 30px 0px 30px;
+}
+.payement {
+  width: 1100px;
+  margin: auto;
+  border: 3px solid #eaeaea;
+  margin-top: 80px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: #303030;
+}
+.payement .payement__img {
+  margin-top: 50px;
+  width: 550px;
+}
+.payement .payement__img img {
+  height: 500px;
+  margin-left: 180px;
+}
+.payement .payement__form {
+  width: 550px;
+  background-color: #eaeaea;
+  position: relative;
+}
+.payement .payement__form h1 {
+  font-size: 32px;
+  margin-left: 25px;
+  margin-top: 20px;
+}
+.payement .payement__form form {
+  margin-top: 60px;
+}
+.payement .payement__form form .container__CVCandDate {
+  display: flex;
+  flex-direction: row;
+}
+.payement .payement__form form .container__CVCandDate .form__inputs__container {
+  position: relative;
+  margin-right: 150px;
+}
+.payement .payement__form form .container__CVCandDate .form__inputs__container .form__inputs {
+  position: absolute;
+  top: 45px;
+  width: 165%;
+  outline: none;
+  padding: 15px;
+  border: none;
+  background: #fdfdfd;
+  margin-top: -13px;
+  height: 5px;
+  margin-left: 16px;
+  font-size: 20px;
+}
+.payement .payement__form form .form__inputs__container {
+  margin-top: 60px;
+  height: 50px;
+}
+.payement .payement__form form .form__inputs__container label {
+  font-size: 20px;
+  margin-left: 16px;
+}
+.payement .payement__form form .form__inputs__container .form__inputs {
+  width: 90%;
+  outline: none;
+  padding: 15px;
+  border: none;
+  background: #fdfdfd;
+  margin-top: 15px;
+  height: 10px;
+  margin-left: 16px;
+  font-size: 20px;
+}
+.payement .payement__form form #country {
+  position: relative;
+}
+.payement .payement__form form #country select {
+  width: 80%;
+  height: 30px;
+  left: 0px;
+  top: 15px;
+  position: absolute;
+}
+.payement .payement__form form .form__button {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 50px;
+}
+.payement .payement__form form .form__button input:nth-child(1) {
+  width: 110px;
+  height: 35px;
+  background: transparent;
+  border-color: #06f;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: 300;
+  outline: none;
+  color: #06f;
+  margin-left: 30px;
+}
+.payement .payement__form form .form__button input:nth-child(2) {
+  width: 110px;
+  height: 40px;
+  background: #06f;
+  color: white;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: 300;
+  outline: none;
+  margin-right: 30px;
+}
